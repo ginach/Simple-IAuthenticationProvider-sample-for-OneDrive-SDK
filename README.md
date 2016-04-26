@@ -5,5 +5,6 @@ Using the sample `AuthenticationHelper` and `SimpleAuthenticationProvider` class
 
 ```csharp
 var authenticationHelper = new AuthenticationHelper();
-var client = await authenticationHelper.GetSimpleAuthenticationProviderClientAsync(simpleAuthenticationProvider) as OneDriveClient;
+var client = await authenticationHelper
+	.GetSimpleAuthenticationProviderClientAsync(simpleAuthenticationProvider) as OneDriveClient;
 ```
